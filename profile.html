@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khaled Swailem's AI testing, Python debugging, code refactoring, and software quality portfolio.">
+  <title>Khaled Swailem | AI Testing & Code Quality</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #9da7b3;
+      --accent: #58a6ff;
+      --green: #3fb950;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(100% - 32px, 980px); margin: 0 auto; }
+    header { padding: 64px 0 38px; border-bottom: 1px solid var(--border); }
+    .eyebrow { color: var(--green); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .82rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.15; margin: 12px 0; }
+    h2 { font-size: 1.45rem; margin: 0 0 14px; }
+    h3 { font-size: 1.08rem; margin: 0 0 8px; }
+    p { margin: 0 0 14px; }
+    .lead { max-width: 760px; color: var(--muted); font-size: 1.12rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .chip { border: 1px solid var(--border); background: var(--panel); padding: 5px 11px; border-radius: 999px; font-size: .88rem; }
+    main { padding: 34px 0 56px; }
+    section { margin: 0 0 38px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .card p, .muted { color: var(--muted); }
+    .card ul { margin: 10px 0 0; padding-left: 20px; }
+    .status { display: inline-block; border: 1px solid #238636; color: var(--green); border-radius: 999px; padding: 2px 9px; font-size: .76rem; margin-bottom: 10px; }
+    .skill-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+    .skill { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--panel); }
+    .callout { border-left: 4px solid var(--green); padding: 16px 18px; background: var(--panel); border-radius: 0 8px 8px 0; }
+    footer { border-top: 1px solid var(--border); padding: 22px 0 34px; color: var(--muted); font-size: .9rem; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #ffffff; --panel: #f6f8fa; --border: #d0d7de; --text: #1f2328; --muted: #59636e; --accent: #0969da; --green: #1a7f37; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Technical Portfolio · AI Testing & Software Quality</div>
+      <h1>Khaled Swailem</h1>
+      <p class="lead">Aspiring AI Tester and Code Evaluator focused on Python debugging, code refactoring, edge-case testing, and systematic evaluation of AI-generated code.</p>
+      <div class="chips" aria-label="Technical focus">
+        <span class="chip">Python</span>
+        <span class="chip">Debugging</span>
+        <span class="chip">Unit Testing</span>
+        <span class="chip">Edge Cases</span>
+        <span class="chip">Code Refactoring</span>
+        <span class="chip">AI Code Evaluation</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Profile</h2>
+      <p>I bring 21+ years of experience in enterprise IT, structured problem-solving, and quality-focused delivery. I am building a practical portfolio to demonstrate programming fundamentals, defect analysis, test design, and code reliability.</p>
+      <p>My approach is evidence-driven: reproduce the issue, identify the root cause, implement a focused fix, and validate the result with repeatable tests.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills in Development</h2>
+      <div class="skill-list">
+        <div class="skill"><strong>Python</strong><br><span class="muted">Functions, data structures, exceptions, debugging, and unit testing.</span></div>
+        <div class="skill"><strong>Software Testing</strong><br><span class="muted">Boundary-value analysis, negative testing, edge cases, and regression testing.</span></div>
+        <div class="skill"><strong>Defect Analysis</strong><br><span class="muted">Reproducing bugs, tracing execution, root-cause analysis, and verifying fixes.</span></div>
+        <div class="skill"><strong>Code Refactoring</strong><br><span class="muted">Improving readability and maintainability while preserving expected behavior.</span></div>
+        <div class="skill"><strong>AI Code Evaluation</strong><br><span class="muted">Assessing correctness, instruction compliance, robustness, and test coverage.</span></div>
+        <div class="skill"><strong>Version Control</strong><br><span class="muted">Git, GitHub repositories, meaningful commits, and technical documentation.</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Portfolio Projects</h2>
+      <p class="muted">These are the planned portfolio repositories. Add links after you create and publish each repository, and keep project descriptions aligned with the work actually completed.</p>
+      <div class="grid">
+        <article class="card">
+          <span class="status">Priority 1</span>
+          <h3>python-debugging-lab</h3>
+          <p>A collection of intentionally flawed Python examples with documented root causes, corrected implementations, and regression tests.</p>
+          <ul>
+            <li>Reproducible defects</li>
+            <li>Fix explanations</li>
+            <li>pytest verification</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>edge-case-testing</h3>
+          <p>Test cases covering empty inputs, invalid values, boundaries, duplicates, and unexpected input combinations.</p>
+          <ul>
+            <li>Boundary-value tests</li>
+            <li>Negative tests</li>
+            <li>Test rationale</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>code-refactoring-examples</h3>
+          <p>Before-and-after examples showing clearer implementations while preserving behavior through regression tests.</p>
+          <ul>
+            <li>Original vs. refactored code</li>
+            <li>Behavior-preservation checks</li>
+            <li>Trade-off notes</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>ai-code-evaluation</h3>
+          <p>Structured evaluation of sample AI-generated solutions against requirements, correctness criteria, and edge cases.</p>
+          <ul>
+            <li>Evaluation rubric</li>
+            <li>Reproducible tests</li>
+            <li>Evidence-based findings</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>How I Evaluate Code</h2>
+      <div class="callout">
+        <p><strong>Reliable code must do more than pass the happy path.</strong> It should meet the stated requirements, handle boundary and invalid inputs predictably, and remain understandable and maintainable.</p>
+        <p style="margin-bottom:0">My workflow: understand requirements → reproduce the issue → inspect the logic → test edge cases → implement or assess the fix → run regression tests → document the evidence.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Objective</h2>
+      <p>To contribute to AI training, coding evaluation, and software quality initiatives by identifying defects, designing meaningful tests, and evaluating code against explicit requirements.</p>
+    </section>
+
+    <section>
+      <h2>Connect</h2>
+      <p class="muted">Add your GitHub username, LinkedIn profile, and links to completed repositories here once they are available.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Khaled Swailem · AI Testing & Code Quality Portfolio</div>
+  </footer>
+</body>
+</html>
